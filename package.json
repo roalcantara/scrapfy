@@ -58,6 +58,7 @@
     "lodash": "^4.17.15",
     "mz": "^2.7.0",
     "pretty-format": "^25.4.0",
+    "puppeteer": "^3.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.5",
     "tslib": "^1.11.1"
@@ -80,6 +81,7 @@
     "@types/lodash": "^4.14.150",
     "@types/mz": "^2.7.0",
     "@types/node": "~13.13.2",
+    "@types/puppeteer": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "2.29.0",
     "@typescript-eslint/parser": "2.29.0",
     "dotenv": "8.2.0",
