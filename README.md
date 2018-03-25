@@ -1,5 +1,7 @@
 # Scrapfy
 
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+
 A simple scrap application written in [TypeScript](https://typescriptlang.org) and running on [NestJS](https://nestjs.com/), generated using [Nx](https://nx.dev).
 
 ## Setup
