@@ -17,7 +17,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/roalcantara/scrapfy.git"
-  },  
+  },
+  "engines": {
+    "node": "10",
+    "yarn": ">=1.9.0 <2.0.0"
+  },
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
