@@ -50,6 +50,8 @@
     "tslib": "^1.11.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@nrwl/eslint-plugin-nx": "9.2.3",
     "@nrwl/jest": "9.2.3",
     "@nrwl/node": "^9.2.3",
@@ -61,11 +63,17 @@
     "dotenv": "8.2.0",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.11.0",
+    "husky": "^4.2.5",
     "jest": "25.4.0",
     "prettier": "2.0.5",
     "ts-jest": "25.4.0",
     "ts-node": "~8.9.0",
     "tslint": "~6.1.1",
     "typescript": "~3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
