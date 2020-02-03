@@ -66,6 +66,7 @@
     "eslint-config-prettier": "6.11.0",
     "factory-bot-ts": "^0.1.5",
     "faker": "^4.1.0",
+    "html-loader-jest": "^0.2.1",
     "husky": "^4.2.5",
     "jest": "25.4.0",
     "prettier": "2.0.5",
