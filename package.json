@@ -48,7 +48,8 @@
     "clear": "rm -r ./dist && rm -r .tmp || true",
     "purge": "yarn clear && rm -rf node_modules",
     "reset": "yarn purge && yarn",
-    "release": "npx semantic-release"
+    "release": "npx semantic-release",
+    "release:dry-run": "export $(cat .env | xargs) && npx semantic-release --dry-run --no-ci --debug"
   },
   "private": true,
   "dependencies": {
