@@ -1,0 +1,67 @@
+{
+  "name": "scrapfy",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "A simple scrapper",
+  "keywords": [
+    "boilerplate",
+    "typescript",
+    "crawler",
+    "nestjs",
+    "scrap",
+    "cli"
+  ],
+  "author": "@roalcantara",
+  "url": "https://github.com/roalcantara/scrapfy/issues",
+  "email": "rogerio.alcantara@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roalcantara/scrapfy.git"
+  },  
+  "scripts": {
+    "nx": "nx",
+    "start": "nx serve",
+    "build": "nx build",
+    "test": "nx test",
+    "lint": "nx workspace-lint && nx lint",
+    "e2e": "nx e2e",
+    "affected:apps": "nx affected:apps",
+    "affected:libs": "nx affected:libs",
+    "affected:build": "nx affected:build",
+    "affected:e2e": "nx affected:e2e",
+    "affected:test": "nx affected:test",
+    "affected:lint": "nx affected:lint",
+    "affected:dep-graph": "nx affected:dep-graph",
+    "affected": "nx affected",
+    "format": "nx format:write",
+    "format:write": "nx format:write",
+    "format:check": "nx format:check",
+    "update": "nx migrate latest",
+    "workspace-schematic": "nx workspace-schematic",
+    "dep-graph": "nx dep-graph",
+    "help": "nx help"
+  },
+  "private": true,
+  "dependencies": {
+    "tslib": "^1.11.1"
+  },
+  "devDependencies": {
+    "@nrwl/eslint-plugin-nx": "9.2.3",
+    "@nrwl/jest": "9.2.3",
+    "@nrwl/node": "^9.2.3",
+    "@nrwl/workspace": "9.2.3",
+    "@types/jest": "25.2.1",
+    "@types/node": "~13.13.2",
+    "@typescript-eslint/eslint-plugin": "2.29.0",
+    "@typescript-eslint/parser": "2.29.0",
+    "dotenv": "8.2.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.11.0",
+    "jest": "25.4.0",
+    "prettier": "2.0.5",
+    "ts-jest": "25.4.0",
+    "ts-node": "~8.9.0",
+    "tslint": "~6.1.1",
+    "typescript": "~3.8.3"
+  }
+}
