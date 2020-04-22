@@ -62,7 +62,8 @@
     "puppeteer": "^3.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.5",
-    "tslib": "^1.11.1"
+    "tslib": "^1.11.1",
+    "tty-table": "^4.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
