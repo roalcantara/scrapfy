@@ -66,6 +66,7 @@
     "husky": "^4.2.5",
     "jest": "25.4.0",
     "prettier": "2.0.5",
+    "pretty-quick": "^2.0.1",
     "ts-jest": "25.4.0",
     "ts-node": "~8.9.0",
     "tslint": "~6.1.1",
@@ -73,7 +74,9 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npx pretty-quick --staged",
+      "postcommit": "git update-index -g"
     }
   }
 }

@@ -2,6 +2,7 @@
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 A simple scrap application written in [TypeScript](https://typescriptlang.org) and running on [NestJS](https://nestjs.com/), generated using [Nx](https://nx.dev).
 
