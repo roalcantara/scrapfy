@@ -24,7 +24,9 @@
     "forceConsistentCasingInFileNames": true,
     "assumeChangesOnlyAffectDirectDependencies": true,
     "pretty": true,
-    "paths": {}
+    "paths": {
+      "@scrapfy/util": ["libs/util/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

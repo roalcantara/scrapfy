@@ -18,5 +18,10 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "util": {
+      "tags": ["scope:shared"],
+      "implicitDependencies": []
+    }
+  }
 }

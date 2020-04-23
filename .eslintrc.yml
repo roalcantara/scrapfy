@@ -25,11 +25,15 @@ rules:
     - enforceBuildableLibDependency: true
       allow: []
       depConstraints:
-        - sourceTag: '*'
+        - sourceTag: scope:shared
           onlyDependOnLibsWithTags:
-            - '*'
+            - scope:shared
 overrides:
   - files:
       - '*.tsx'
     rules:
       '@typescript-eslint/no-unused-vars': 'off'
+      '@typescript-eslint/no-implicit-dependencies':
+        - 2
+        - dev
+        - - '@scrapfy/util'
