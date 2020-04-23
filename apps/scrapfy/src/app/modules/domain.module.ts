@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common'
-import { ImdbService } from '@scrapfy/domain'
+import { ImdbService, PokeapiService } from '@scrapfy/domain'
 
-const services = [ImdbService]
+const services = [ImdbService, PokeapiService]
 
 @Module({
   providers: [...services],

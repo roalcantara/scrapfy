@@ -1,3 +1,5 @@
+import { Injectable, Optional } from '@nestjs/common'
+
 import { Requestfy } from '@scrapfy/http'
 import { strip } from '@scrapfy/util'
 import { Pokemon } from './pokemon.model'
@@ -5,6 +7,7 @@ import { PokeapiResponse } from './pokeapi.response'
 import { trace } from '@scrapfy/log'
 import { spinner } from '@scrapfy/prompt'
 
+@Injectable()
 export class PokeapiService {
   names = [
     'Bulbasaur',
@@ -29,7 +32,7 @@ export class PokeapiService {
     'Raticate'
   ] as const
 
-  constructor(readonly helper = new Requestfy('https://pokeapi.co/api/v2/pokemon')) {}
+  constructor(@Optional() readonly helper = new Requestfy('https://pokeapi.co/api/v2/pokemon')) {}
 
   @trace
   @spinner

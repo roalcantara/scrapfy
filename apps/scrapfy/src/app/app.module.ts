@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common'
 
 import { DomainModule } from './modules'
-import { MovieController } from './controllers'
+import { MovieController, PokemonController } from './controllers'
 
 const modules = [DomainModule]
-const controllers = [MovieController]
+const controllers = [MovieController, PokemonController]
 
 @Module({
   imports: [...modules],

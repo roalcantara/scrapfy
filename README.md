@@ -32,6 +32,17 @@ curl --request GET \
   --url http://localhost:3333/api/movies
 ```
 
+#### Pokemons
+
+Run `yarn start scrapfy` to startup the NestJS application
+
+To get all pokemons, run:
+
+```shell
+curl --request GET \
+  --url http://localhost:3333/api/pokemons
+```
+
 ---
 
 <p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
