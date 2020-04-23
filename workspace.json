@@ -141,6 +141,41 @@
           }
         }
       }
+    },
+    "crawler": {
+      "root": "libs/crawler",
+      "sourceRoot": "libs/crawler/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/crawler/.eslintrc.yml",
+            "tsConfig": ["libs/crawler/tsconfig.lib.json", "libs/crawler/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/crawler/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/crawler/jest.config.js",
+            "tsConfig": "libs/crawler/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/crawler",
+            "tsConfig": "libs/crawler/tsconfig.lib.json",
+            "packageJson": "libs/crawler/package.json",
+            "main": "libs/crawler/src/index.ts",
+            "assets": ["libs/crawler/*.md"]
+          }
+        }
+      }
     }
   },
   "cli": {

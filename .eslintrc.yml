@@ -40,3 +40,4 @@ overrides:
           - '@scrapfy/meta'
           - '@scrapfy/log'
           - '@scrapfy/http'
+          - '@scrapfy/crawler'
