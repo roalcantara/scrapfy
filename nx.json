@@ -26,6 +26,10 @@
     "meta": {
       "tags": ["scope:shared"],
       "implicitDependencies": []
+    },
+    "log": {
+      "tags": ["scope:shared"],
+      "implicitDependencies": []
     }
   }
 }

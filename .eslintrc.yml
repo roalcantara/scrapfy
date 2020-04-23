@@ -38,3 +38,4 @@ overrides:
         - dev
         - - '@scrapfy/util'
           - '@scrapfy/meta'
+          - '@scrapfy/log'

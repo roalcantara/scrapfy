@@ -26,7 +26,8 @@
     "pretty": true,
     "paths": {
       "@scrapfy/util": ["libs/util/src/index.ts"],
-      "@scrapfy/meta": ["libs/meta/src/index.ts"]
+      "@scrapfy/meta": ["libs/meta/src/index.ts"],
+      "@scrapfy/log": ["libs/log/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
