@@ -53,6 +53,12 @@ Run `yarn cli movie:winners` to scrap the best picture winners from IMDB`s.
 
 or `DEBUG='scrapfy*' yarn cli movie:winners` debug the scrapping.
 
+#### Pokemons
+
+Run `yarn cli pokemon:all` to get them all!
+
+or `DEBUG='scrapfy*' yarn cli pokemon:all` to debug getting them all!
+
 ---
 
 <p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>

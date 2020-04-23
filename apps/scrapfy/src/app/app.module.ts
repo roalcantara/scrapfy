@@ -3,11 +3,11 @@ import { CommandModule } from 'nestjs-command'
 
 import { DomainModule } from './modules'
 import { MovieController, PokemonController } from './controllers'
-import { MovieCommand } from './commands'
+import { MovieCommand, PokemonCommand } from './commands'
 
 const modules = [DomainModule, CommandModule]
 const controllers = [MovieController, PokemonController]
-const commands = [MovieCommand]
+const commands = [MovieCommand, PokemonCommand]
 
 @Module({
   imports: [...modules],
