@@ -1,12 +1,15 @@
+import { Injectable, Optional } from '@nestjs/common'
+
 import { Crawlify } from '@scrapfy/crawler'
 import { Movie } from './movie.model'
 import { trace } from '@scrapfy/log'
 import { spinner } from '@scrapfy/prompt'
 
+@Injectable()
 export class ImdbService {
   options = ['Best Picture-Winning', '1917 Review'] as const
 
-  constructor(readonly scrapfy = new Crawlify()) {}
+  constructor(@Optional() readonly scrapfy = new Crawlify()) {}
 
   @trace
   @spinner

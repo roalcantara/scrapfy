@@ -23,6 +23,15 @@ Run `yarn start scrapfy` to startup the NestJS application.
 
 or `DEBUG='scrapfy*' yarn start scrapfy` to startup the NestJS application in debbug.
 
+#### Movies
+
+To scrap all the best picture winners, run:
+
+```shell
+curl --request GET \
+  --url http://localhost:3333/api/movies
+```
+
 ---
 
 <p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
