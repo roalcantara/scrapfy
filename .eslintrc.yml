@@ -39,3 +39,4 @@ overrides:
         - - '@scrapfy/util'
           - '@scrapfy/meta'
           - '@scrapfy/log'
+          - '@scrapfy/http'

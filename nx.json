@@ -30,6 +30,10 @@
     "log": {
       "tags": ["scope:shared"],
       "implicitDependencies": []
+    },
+    "http": {
+      "tags": ["scope:shared"],
+      "implicitDependencies": []
     }
   }
 }
