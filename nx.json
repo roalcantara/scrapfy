@@ -38,6 +38,10 @@
     "crawler": {
       "tags": ["scope:shared"],
       "implicitDependencies": []
+    },
+    "prompt": {
+      "tags": ["scope:shared"],
+      "implicitDependencies": []
     }
   }
 }

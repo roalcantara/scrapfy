@@ -176,6 +176,41 @@
           }
         }
       }
+    },
+    "prompt": {
+      "root": "libs/prompt",
+      "sourceRoot": "libs/prompt/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/prompt/.eslintrc.yml",
+            "tsConfig": ["libs/prompt/tsconfig.lib.json", "libs/prompt/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/prompt/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/prompt/jest.config.js",
+            "tsConfig": "libs/prompt/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/prompt",
+            "tsConfig": "libs/prompt/tsconfig.lib.json",
+            "packageJson": "libs/prompt/package.json",
+            "main": "libs/prompt/src/index.ts",
+            "assets": ["libs/prompt/*.md"]
+          }
+        }
+      }
     }
   },
   "cli": {

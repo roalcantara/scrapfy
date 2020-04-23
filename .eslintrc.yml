@@ -41,3 +41,4 @@ overrides:
           - '@scrapfy/log'
           - '@scrapfy/http'
           - '@scrapfy/crawler'
+          - '@scrapfy/prompt'
