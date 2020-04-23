@@ -43,6 +43,10 @@ curl --request GET \
   --url http://localhost:3333/api/pokemons
 ```
 
+### CLI
+
+You can also make usage via Command Line.
+
 ---
 
 <p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
