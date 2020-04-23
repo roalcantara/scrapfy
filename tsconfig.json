@@ -25,7 +25,8 @@
     "assumeChangesOnlyAffectDirectDependencies": true,
     "pretty": true,
     "paths": {
-      "@scrapfy/util": ["libs/util/src/index.ts"]
+      "@scrapfy/util": ["libs/util/src/index.ts"],
+      "@scrapfy/meta": ["libs/meta/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -22,6 +22,10 @@
     "util": {
       "tags": ["scope:shared"],
       "implicitDependencies": []
+    },
+    "meta": {
+      "tags": ["scope:shared"],
+      "implicitDependencies": []
     }
   }
 }

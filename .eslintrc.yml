@@ -37,3 +37,4 @@ overrides:
         - 2
         - dev
         - - '@scrapfy/util'
+          - '@scrapfy/meta'
