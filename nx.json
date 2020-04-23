@@ -42,6 +42,10 @@
     "prompt": {
       "tags": ["scope:shared"],
       "implicitDependencies": []
+    },
+    "domain": {
+      "tags": ["scope:domain"],
+      "implicitDependencies": []
     }
   }
 }

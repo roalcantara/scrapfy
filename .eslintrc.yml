@@ -28,6 +28,10 @@ rules:
         - sourceTag: scope:shared
           onlyDependOnLibsWithTags:
             - scope:shared
+        - sourceTag: scope:domain
+          onlyDependOnLibsWithTags:
+            - scope:shared
+            - scope:domain
 overrides:
   - files:
       - '*.tsx'
@@ -42,3 +46,4 @@ overrides:
           - '@scrapfy/http'
           - '@scrapfy/crawler'
           - '@scrapfy/prompt'
+          - '@scrapfy/domain'

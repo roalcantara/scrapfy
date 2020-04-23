@@ -30,7 +30,8 @@
       "@scrapfy/log": ["libs/log/src/index.ts"],
       "@scrapfy/http": ["libs/http/src/index.ts"],
       "@scrapfy/crawler": ["libs/crawler/src/index.ts"],
-      "@scrapfy/prompt": ["libs/prompt/src/index.ts"]
+      "@scrapfy/prompt": ["libs/prompt/src/index.ts"],
+      "@scrapfy/domain": ["libs/domain/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
