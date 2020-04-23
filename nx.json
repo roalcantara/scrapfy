@@ -46,6 +46,10 @@
     "domain": {
       "tags": ["scope:domain"],
       "implicitDependencies": []
+    },
+    "scrapfy": {
+      "tags": ["app:server"],
+      "implicitDependencies": []
     }
   }
 }

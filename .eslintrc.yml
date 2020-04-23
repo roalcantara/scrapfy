@@ -32,6 +32,10 @@ rules:
           onlyDependOnLibsWithTags:
             - scope:shared
             - scope:domain
+        - sourceTag: app:server
+          onlyDependOnLibsWithTags:
+            - scope:shared
+            - scope:domain
 overrides:
   - files:
       - '*.tsx'

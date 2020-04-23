@@ -236,11 +236,66 @@
           }
         }
       }
+    },
+    "scrapfy": {
+      "root": "apps/scrapfy",
+      "sourceRoot": "apps/scrapfy/src",
+      "projectType": "application",
+      "prefix": "scrapfy",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/scrapfy",
+            "main": "apps/scrapfy/src/main.ts",
+            "tsConfig": "apps/scrapfy/tsconfig.app.json",
+            "assets": ["apps/scrapfy/src/assets"],
+            "buildLibsFromSource": true
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/scrapfy/src/environments/environment.ts",
+                  "with": "apps/scrapfy/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "scrapfy:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "apps/scrapfy/.eslintrc.yml",
+            "tsConfig": ["apps/scrapfy/tsconfig.app.json", "apps/scrapfy/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!apps/scrapfy/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/scrapfy/jest.config.js",
+            "tsConfig": "apps/scrapfy/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
     "packageManager": "yarn",
-    "defaultCollection": "@nrwl/workspace"
+    "defaultCollection": "@nrwl/nest"
   },
   "schematics": {
     "@nrwl/workspace": {
@@ -297,5 +352,6 @@
         "linter": "eslint"
       }
     }
-  }
+  },
+  "defaultProject": "scrapfy"
 }

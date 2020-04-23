@@ -15,6 +15,14 @@ Run `cd scrapfy`
 
 Run `yarn install`
 
+## Usage
+
+### NESTJS API
+
+Run `yarn start scrapfy` to startup the NestJS application.
+
+or `DEBUG='scrapfy*' yarn start scrapfy` to startup the NestJS application in debbug.
+
 ---
 
 <p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
